@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-
 typedef struct {
     char *item;
     int top;
