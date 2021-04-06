@@ -45,8 +45,12 @@ void ins_at_front(Queue *qp, int v){
   qp->item[qp->front] = v;
 }
 int del_from_front(Queue *qp){
-  printf("You need to implement this by yourself\n");
-  return -9999;
+  if (qp->front > qp->rear){
+    return -9999;
+  }
+  int v = qp->item[qp->front];
+  qp->front++;
+  return v;
 }
 
 
