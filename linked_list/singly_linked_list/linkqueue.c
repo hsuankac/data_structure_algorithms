@@ -23,7 +23,7 @@ void printList(LinkedList *);
 int deleteQueue(LinkedList *);
 
 // to initialize the linkedlist object
-// Input parameter: listp is the pointer to linkedlist object
+// Input parameter: lstPtr is the pointer to linkedlist object
 // Precondition: LinkedList object pointed by listptr must be existing.
 // Return Value: Nothing
 void initList(LinkedList *lstPtr){
@@ -35,7 +35,7 @@ void initList(LinkedList *lstPtr){
 
 // To add a new node at the end of the LinkedList
 // Input parameters: pointer to struct LinkedList, an integer data that will
-//                   be the content  of the new node.
+//                   be the content of the new node.
 // Precondition: The linkedList object must be existing.
 // Return Value: Nothing
 void insertQueue(LinkedList *listPtr, int data){
