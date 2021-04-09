@@ -1,0 +1,13 @@
+int binary_search(int list[], int size, int target){
+	int lb = 0, ub = size - 1;
+	while(lb <= ub){
+		int m = (lb + ub) / 2;
+		if(target == list[m])
+			return m;
+		else if(target > list[m])
+			lb = m + 1;
+		else
+			ub = m - 1;
+	}
+	return - 1;
+}
