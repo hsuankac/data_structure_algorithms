@@ -1,0 +1,12 @@
+Heapsort(A[], n):
+	Heapify(A, n)
+	for(i = n; i >= 2; i = i - 1):
+		// get the content of the root
+		temp = A[1]
+		// copy the last element into the root
+		A[1] = A[i]
+		//Adjust the heap at root since we have taken out the root,
+		// so total elements in the heap is i - 1
+		Adjust(A, 1, i - 1)
+		// place the temp at index i
+		A[i] = temp

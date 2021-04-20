@@ -1,0 +1,12 @@
+insertHeap(A[], n):
+	// insert element at A[n] into heap that maintained in A[1:n-1]
+	i = n
+	item = A[n]
+	p = floor(i/2)
+	// as long as parent index is valid and the vlaue at parent is less than 
+	// the current item
+	while(p > 0 and A[p] < item):
+		A[i] = A[p]
+		i = p
+		p = floor(i/2)
+	A[i] = item
